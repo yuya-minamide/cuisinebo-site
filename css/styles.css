@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  color: #bbb;
+  background-color: #262626; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+p {
+  letter-spacing: 1px;
+  line-height: 1.5; }
+
+.header-container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../image/home.jpeg);
+  background-position: center;
+  background-size: cover;
+  text-align: center; }
+  .header-container .store-name-container {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center; }
+    .header-container .store-name-container .logo-link {
+      font-size: 50px;
+      width: 90px;
+      height: 90px;
+      color: #d3ab55;
+      border: 3px solid #d3ab55;
+      border-radius: 50%;
+      margin-right: 20px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header-container .store-name-container .logo-link img {
+        width: 110px;
+        height: 110px; }
+    .header-container .store-name-container .name-container {
+      text-align: left; }
+      .header-container .store-name-container .name-container .store-name {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 2.6rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin: 0; }
+      .header-container .store-name-container .name-container .store-explanation {
+        margin: 0; }
+  .header-container .reservation-container {
+    margin-top: 120px; }
+    .header-container .reservation-container .greeting {
+      font-size: 4.5rem;
+      font-family: "Dancing Script", cursive;
+      color: #d3ab55; }
+    .header-container .reservation-container .reservation-title {
+      font-weight: 300;
+      font-size: 3rem; }
+    .header-container .reservation-container .reservation-btn {
+      display: inline-block;
+      padding: 14px 34px;
+      color: #d3ab55;
+      border: solid 1px #d3ab55;
+      font-size: 0.8rem;
+      font-weight: 400;
+      text-transform: uppercase; }
+      .header-container .reservation-container .reservation-btn:hover {
+        color: #000;
+        background-color: #d3ab55;
+        transition: all 0.4s; }
+
+.main-container {
+  width: 100%; }
+  .main-container .about-section {
+    display: flex;
+    margin-top: 100px; }
+    .main-container .about-section .about-image-container {
+      width: 40%;
+      position: relative;
+      display: flex;
+      align-items: center; }
+      .main-container .about-section .about-image-container img {
+        width: 100%;
+        opacity: 0.7;
+        position: absolute;
+        left: -30%; }
+    .main-container .about-section .about-container {
+      width: 60%;
+      text-align: center; }
+      .main-container .about-section .about-container .about-title {
+        font-size: 5rem;
+        font-family: "Dancing Script", cursive;
+        color: #d3ab55; }
+      .main-container .about-section .about-container .introduce-title {
+        font-size: 3rem;
+        font-weight: 300; }
+      .main-container .about-section .about-container .ast-mark {
+        font-size: 3rem;
+        color: #d3ab55;
+        font-weight: 300;
+        margin: 0;
+        letter-spacing: 8px; }
+      .main-container .about-section .about-container .introduce {
+        text-align: center;
+        margin: 0 auto 20px auto;
+        width: 85%;
+        font-size: 1.6rem;
+        letter-spacing: 0; }
+      .main-container .about-section .about-container .read-more-btn {
+        color: #d3ab55;
+        border: solid 1px #d3ab55;
+        padding: 12px 40px;
+        text-transform: uppercase; }
+        .main-container .about-section .about-container .read-more-btn:hover {
+          color: #000;
+          background-color: #d3ab55;
+          transition: all 0.4s; }
+  .main-container .menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 140px; }
+    .main-container .menu-section .menu-container {
+      width: 33.3333%;
+      height: 30vw;
+      position: relative;
+      overflow: hidden; }
+      .main-container .menu-section .menu-container:hover .menu-content {
+        left: 0; }
+      .main-container .menu-section .menu-container .menu-content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: rgba(211, 171, 85, 0.6);
+        color: #fff;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: left 0.7s; }
+        .main-container .menu-section .menu-container .menu-content .menu-taitle {
+          font-family: "Nunito Sans", sans-serif;
+          font-size: 3rem;
+          font-weight: 300;
+          letter-spacing: 2px;
+          text-transform: capitalize;
+          margin: 0; }
+        .main-container .menu-section .menu-container .menu-content .menu-price {
+          font-size: 2rem;
+          margin: 0 0 30px 0;
+          font-weight: 300;
+          letter-spacing: 2px;
+          text-transform: capitalize; }
+        .main-container .menu-section .menu-container .menu-content .order-btn {
+          padding: 16px 50px;
+          color: #d3ab55;
+          background-color: #fff;
+          font-size: 0.8rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          border: 1px solid #d3ab55;
+          border-radius: 30px;
+          outline: none; }
+      .main-container .menu-section .menu-container img {
+        object-fit: cover;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%; }
+
+.footer-container {
+  margin-top: 100px; }
+  .footer-container .store-name-container {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center; }
+    .footer-container .store-name-container .logo-link {
+      font-size: 50px;
+      width: 90px;
+      height: 90px;
+      color: #d3ab55;
+      border: 3px solid #d3ab55;
+      border-radius: 50%;
+      margin-right: 20px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .footer-container .store-name-container .logo-link img {
+        width: 110px;
+        height: 110px; }
+    .footer-container .store-name-container .name-container {
+      text-align: left; }
+      .footer-container .store-name-container .name-container .store-name {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 2.6rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin: 0; }
+      .footer-container .store-name-container .name-container .store-explanation {
+        margin: 0; }
+  .footer-container .social-icon-container {
+    text-align: center;
+    margin-top: 70px; }
+    .footer-container .social-icon-container .icon {
+      color: #bbb;
+      margin: 0 15px; }
+      .footer-container .social-icon-container .icon:hover {
+        color: #d3ab55;
+        transition: all 0.4s; }
+  .footer-container .copy-right {
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 70px 0 50px 0; }
